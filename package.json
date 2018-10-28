@@ -10,6 +10,7 @@
   "keywords": ["Xiaomi", "node-red"],
   "node-red"     : {
     "nodes": {
+	  "aqara-weather": "node-red-contrib-aqara-weather/aqara-weather.js",
       "xiaomi-ht": "node-red-contrib-xiaomi-ht/xiaomi-ht.js",
       "xiaomi-magnet": "node-red-contrib-xiaomi-magnet/xiaomi-magnet.js",
       "xiaomi-motion": "node-red-contrib-xiaomi-motion/xiaomi-motion.js",
