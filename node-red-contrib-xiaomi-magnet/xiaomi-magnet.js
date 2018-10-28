@@ -55,11 +55,13 @@ module.exports = function(RED) {
                         node.send([status]);
                     } else if (node.output == "2") {
                         var status = null;
-
-                        if (data.status === 'open') {
-                            status = {"payload": mustache.render(node.openmsg, data)}
-                        } else {
-                            status = {"payload": mustache.render(node.closemsg, data)}
+                        
+                        if (data.status) {
+                            if (data.status === 'open') {
+                                status = {"payload": mustache.render(node.openmsg, data)}
+                            } else {
+                                status = {"payload": mustache.render(node.closemsg, data)}
+                            }
                         }
                         node.send([status]);
                     }
