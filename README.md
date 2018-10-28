@@ -10,6 +10,7 @@ The following devices are currently supported:
 * Motion sensor
 * Power plug (zigbee)
 * Power plug (wifi)
+* Aqara temperature/humidity/pressure sensor
 
 ## Preperation
 To receive the gateway json messages on your network you need to enable the developer mode, aka LAN mode in the gateway. Refer to [openHAB](http://docs.openhab.org/addons/bindings/mihome/readme.html#setup) or [domoticz.com](https://www.domoticz.com/wiki/Xiaomi_Gateway_(Aqara)#Adding_the_Xiaomi_Gateway_to_Domoticz) for the necessary steps. 
