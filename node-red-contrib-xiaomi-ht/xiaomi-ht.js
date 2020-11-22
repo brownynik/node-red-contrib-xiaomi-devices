@@ -22,7 +22,8 @@ module.exports = function(RED) {
                 var payload = msg.payload;
                 node.log("Received message from: " + payload.model + " sid: " + payload.sid + " payload: " + payload.data);
 
-                if (payload.sid == node.sid && payload.model == "sensor_ht") {
+                if (payload.sid == node.sid && (["sensor_ht", "custom.si7021"].indexOf(payload.model)!== -1)) {
+
                     var data = JSON.parse(payload.data)
 
                     if (data.voltage) {
